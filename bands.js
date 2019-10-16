@@ -11,6 +11,7 @@ function searchBand(userInput) {
 
     axios.get(bandUrl).then(
         function(response) {
+            console.log(response.data);
             for (var i = 0; i <response.data.length; i++){
                 console.log("Venue: " + response.data[i].venue.name);
                 console.log("Location: " +response.data[i].venue.city);
@@ -20,3 +21,6 @@ function searchBand(userInput) {
         }
     )
 }
+
+//Exports to liri.js
+module.exports = searchBand;
