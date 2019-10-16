@@ -6,7 +6,7 @@ var keys = require("./keys");
 //Function to take in user input and display information about the movie
 function searchMovie(userInput) {
     var movie = userInput;
-    var movieUrl = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=triolgy";
+    var movieUrl = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=" + keys.omdb.id;
 
     if (!movie) {
         console.log("If you haven't watched Mr. Nobody, then you should.");

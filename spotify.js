@@ -1,6 +1,8 @@
 //Requirements to make page function
+var Spotify = require('node-spotify-api');
 var keys = require("./keys");
-var Spotify = require("node-spotify-api");
+var spotify = new Spotify(keys.spotify);
+
 
 //function to take user input and respond with data
 function searchSpotify(userInput) {
@@ -10,7 +12,7 @@ function searchSpotify(userInput) {
         song = "The Sign Ace of Base"
     }
 
-    Spotify.search({ type: 'track', query: song}, function (err, data){
+    spotify.search({type: 'track', query: song}, function(err, data){
         if (err) {
             return console.log("Error: " + err);
         }
