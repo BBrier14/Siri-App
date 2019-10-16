@@ -1,4 +1,3 @@
-console.log('this is loaded');
 
 exports.spotify = {
   id: process.env.d74a4002d5af407b82e5151fc97ec632,
