@@ -1,6 +1,5 @@
 //Requirements needed for page to function
 var axios = require("axios");
-var fs = require("fs");
 var keys = require("./keys");
 
 //Function to take in user input and display information about the movie
@@ -16,7 +15,6 @@ function searchMovie(userInput) {
 
     axios.get(movieUrl).then(
         function (response) {
-            console.log(response.data);
             console.log("Title: " + response.data.Title);
             console.log("Year " + response.data.Year);
             console.log("IMDB Rating: " + response.data.imdbRating);

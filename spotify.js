@@ -16,7 +16,6 @@ function searchSpotify(userInput) {
         if (err) {
             return console.log("Error: " + err);
         }
-        console.log(response.data);
         console.log("Artist: " + data.tracks.items[0].artists[0].name);
         console.log("Song: " + data.tracks.items[0].name);
         console.log("Album: " + data.tracks.items[0].album.name);

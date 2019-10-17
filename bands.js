@@ -1,5 +1,4 @@
 //Requirements needed for page to function
-var fs = require("fs");
 var axios = require("axios");
 var moment = require("moment");
 var keys = require("./keys");
@@ -11,7 +10,6 @@ function searchBand(userInput) {
 
     axios.get(bandUrl).then(
         function(response) {
-            console.log(response.data);
             for (var i = 0; i <response.data.length; i++){
                 console.log("Venue: " + response.data[i].venue.name);
                 console.log("Location: " +response.data[i].venue.city);
