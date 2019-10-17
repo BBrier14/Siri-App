@@ -17,7 +17,7 @@ switch (userSearch) {
         console.log("How may I assist you?" +
             "\nconcert-this: search for an artist's concert" +
             "\nmovie-this: search for information about a movie" +
-            "\nspotify-this-song: search for information about a song" +
+            "\nspotify-this: search for information about a song" +
             "\n-----------------------------");
         break;
     case "concert-this":
