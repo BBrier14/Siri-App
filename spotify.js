@@ -12,7 +12,7 @@ function searchSpotify(userInput) {
         song = "The Sign Ace of Base"
     }
 
-    spotify.search({type: 'track', query: song}, function(err, data){
+    spotify.search({ type: 'track', query: song }, function (err, data) {
         if (err) {
             return console.log("Error: " + err);
         }

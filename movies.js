@@ -10,7 +10,7 @@ function searchMovie(userInput) {
     if (!movie) {
         console.log("If you haven't watched Mr. Nobody, then you should.");
         console.log("You can find it on netflix!");
-        movie= "Mr. Nobody";
+        movie = "Mr. Nobody";
     }
 
     axios.get(movieUrl).then(
