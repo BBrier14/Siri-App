@@ -45,6 +45,12 @@ function doThis() {
         if (search[0] === "spotify-this") {
             var song = search[1].slice(1, -1);
             searchSpotify(song)
+        } else if (search[0] === "movie-this") {
+            var movie = search[1].slice(1, -1);
+            searchMovie(movie)
+        } else if (search[0] === "concert-this") {
+            var artist = search[1].slice(1, -1);
+            searchBand(artist);
         }
     })
 }
